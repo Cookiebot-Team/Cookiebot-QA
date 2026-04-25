@@ -5,5 +5,5 @@ Feature: Doomlist feature that prevents user listed on it to join groups with th
 
     Scenario: User on the Doomlist tries to join the group
         Given that the user is listed on the Doomlist
-        When they try to join the group
+        When they try to join the group with the bot enabled
         Then they should be prevented from joining the group
