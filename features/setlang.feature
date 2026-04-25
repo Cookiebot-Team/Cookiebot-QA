@@ -1,7 +1,7 @@
 Feature: Setting the language for Cookiebot 
 
     Background:
-        Given that the user is on the Cookiebot website
+        Given that the user is on the Cookiebot settings page
         And the user has access to the language settings
     
     Scenario: User changes the language to Spanish
