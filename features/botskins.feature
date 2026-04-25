@@ -1,8 +1,8 @@
-Feature: Bot skins feature that customizes the bot to cater to specific events
+Feature: Bot skins that customizes the bot to cater to specific events
 
-    Scenario: Bot skin "Bombot" is applied to the bot for "BrazilFurFest" 
+    Scenario: Bot skin "Bombot" is applied to the bot for "BrasilFurFest" 
         Given that the bot skin "Bombot" is applied to Cookiebot
-        And the bot is on the "BrazilFurFest" event group
+        And the bot is on the "BrasilFurFest" event group
         When the user interacts with the bot in the group
         Then the bot should display the "Bombot" skin and provide event-specific interactions
 
