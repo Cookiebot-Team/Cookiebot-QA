@@ -1,4 +1,4 @@
-Feature: Utility /isalive endpoint for health checks
+Feature: Utility /isalive feature for bot health checks
 
     Background:
         Given that the bot is in the group and properly set up
@@ -11,4 +11,4 @@ Feature: Utility /isalive endpoint for health checks
     Scenario: User pings the bot with the /isalive command but the bot is down
         Given that the bot is not running or unresponsive
         When the user sends the /isalive command to the bot
-        Then the user should not receive any message back, indicating that the bot is down or unresponsive
+        Then the user should not receive any message back 
