@@ -14,6 +14,7 @@ Feature: sends a fun complaint message and picture to the group when the user ty
         Given that the user has received the fun complaint message
         When the user responds to the message with their own complaint
         Then the bot should send a voice message with a on-hold music to the group
-        And then after some minutes answer with "Understood. Have a nice day!" 
+        And then after some minutes answer with a random phrase.
+        
 
         
