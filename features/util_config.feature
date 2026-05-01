@@ -9,7 +9,6 @@ Feature: /config command that allows the Admins to configure the bot's settings 
     Scenario: User tries to use /config command but is not an admin
         Given the user sends the command /config
         When the user is not an admin on that group
-        Then the bot should send a message on the group saying "You don't have permission to use this command."
-        And display a video displaying how to use the /config command to the user 
+        Then the bot should send a message on the group saying "You don't have permission to use this command or are in anonymous mode"
+        And display a video displaying how to remove anonymous mode from the user settings 
 
-    
