@@ -35,5 +35,5 @@ Feature: sends a picture from the partnered cons from a specific command
     Scenario: User types /pawstral in any group
         Given that the user is a member of the group
         When the user types the command "/pawstral" 
-        Then the bot should send a picture of the "Fursmeet" convention to the group
+        Then the bot should send a picture of the "Pawstral" convention to the group
         
