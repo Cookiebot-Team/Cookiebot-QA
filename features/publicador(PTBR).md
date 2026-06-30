@@ -2,7 +2,7 @@
 
 ## Sobre a Ferramenta
 
-> Essa ferramenta permite grupos a publicarem e divulgarem uma gama de informações entre si e em canais de divulgações como o Mercado Furry e o Mural do Cookiebot. 
+> Essa ferramenta permite grupos a publicarem e divulgarem posts entre si e em canais de divulgações como o Mercado Furry e o Mural do Cookiebot. 
 
 > Para fins de desenvolvimento de qualidade, essa função foi descrita nos arquivos 'util_postforwarder.feature' e 'util_postgetter.feature'.
 
@@ -11,7 +11,7 @@
 ### Background: O administrador do grupo adicionou o bot e o configurou propriamente
 
 #### Dado ####
-Que o administrador do grupo criou um post para ser divulgado em outros canais,
+Que o administrador do grupo ou um usuário autorizado criou um post para ser divulgado em outros canais,
 **Enquanto**
 Ele seleciona o post e digita função /publicar,
 **Então** o bot irá encaminhar o post para ser aprovado e divulgado em grupos e canais que permitem ser feito. 
