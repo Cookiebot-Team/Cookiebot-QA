@@ -10,8 +10,7 @@
 
 ### Background: O administrador do grupo adicionou o bot e o configurou propriamente
 
-#### Dado ####
-Que o administrador do grupo ou um usuário autorizado criou um post para ser divulgado em outros canais,
+**Dado** Que o administrador do grupo ou um usuário autorizado criou um post para ser divulgado em outros canais,
 **Enquanto**
 Ele seleciona o post e digita função /publicar,
 **Então** o bot irá encaminhar o post para ser aprovado e divulgado em grupos e canais que permitem ser feito. 
@@ -22,8 +21,7 @@ Ele seleciona o post e digita função /publicar,
 
 ### Background: O administrador do grupo adicionou o bot e o configurou propriamente
 
-#### Dado ####
-Que o administrador do grupo permitiu o bot divulgar posts em seu grupo ou canal
+**Dado** Que o administrador do grupo permitiu o bot divulgar posts em seu grupo ou canal
 **Enquanto**
 Alguém em outro grupo publicou um post,
 **Então** o bot irá encaminhar o post aprovado no grupo ou canal uma vez, em um horário determinado.
