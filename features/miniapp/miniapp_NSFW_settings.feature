@@ -1,7 +1,7 @@
 Feature: NSFW setting that allows the bot to post adult memes and answer with a more mature language
 
     Background:
-        Given that the user is an group admin
+        Given that the user is a group admin
         And the bot is already added in the group
         And the user is at the Miniapp home page
 
