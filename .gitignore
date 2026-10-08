@@ -3,4 +3,5 @@ venv/
 .env
 playwright/
 .playwright/
-/playwright/
+__pycache__/
+.__pycache__/
