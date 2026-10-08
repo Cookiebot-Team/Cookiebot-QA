@@ -3,7 +3,7 @@ class GeneralSettingsPage:
         self.page = page
 
     def click_on_general_settings(self):
-        self.page.click("href=/dashboard/general")
+        self.page.locator("xpath=/html/body/div/div[1]/main/div/div[2]/a[1]").click()
 
     def avoid_conflict_commands(self):
         self.page.get_by_role("switch", name="Avoid command conflicts").click()

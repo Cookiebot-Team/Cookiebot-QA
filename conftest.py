@@ -1,7 +1,10 @@
 import pytest
+import os
 from playwright.sync_api import Playwright, sync_playwright, expect
-from dotenv import WEBSITE
+from dotenv import load_dotenv
+import pytest
 
+load_dotenv()
 
 # @pytest.fixture(scope="session",autouse=True)
 # def website():
@@ -13,8 +16,12 @@ from dotenv import WEBSITE
 @pytest.fixture
 def page():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)  # Set headless=True for headless mode
-        page = browser.new_page()
+        context = p.firefox.launch_persistent_context (
+            user_data_dir="playwright/firefox-profile",
+            headless=False,
+            ) 
+        page = context.pages[0]
+        page.goto(os.environ["WEBSITE"])
         yield page
-        browser.close()
+        context.close()
 
